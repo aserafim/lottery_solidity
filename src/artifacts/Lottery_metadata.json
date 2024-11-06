@@ -108,11 +108,11 @@
 	},
 	"sources": {
 		"src/lottery.sol": {
-			"keccak256": "0x75531cec520a837b53ed364e6cddcedc029166d825ef2142adf95278977b1408",
+			"keccak256": "0x60aa8d9d15297b4145d7e798f063fbabf9b8330f7ccdbeb00cec5bcd17671978",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4c5176fcedfa016f92cebb0d7922180c2204abffea94074771221f3a3327a93e",
-				"dweb:/ipfs/QmZbQqW6mFPoe3abqVvEQfdJ1SNNzHRGBudNbBsgdtf2uG"
+				"bzz-raw://6c64547f55c77c6727f6cad8386f9932d994b7b62475cbcd3f2c18060ec53b6b",
+				"dweb:/ipfs/QmRF3bR2JPqHqcnz1GQDXKsrucyZViFUnWRyPd1nrmiEPZ"
 			]
 		}
 	},

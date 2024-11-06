@@ -63,6 +63,9 @@ contract Lottery{
         // para o vencedor
         winner.transfer(getBalance());
 
+        // limpa o array
+        players = new address payable[](0);
+
     }
 
 }

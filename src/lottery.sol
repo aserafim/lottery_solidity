@@ -41,7 +41,28 @@ contract Lottery{
         return address(this).balance;
     }
 
+    // seleciona um valor aleatorio
     function random() public view returns(uint){
         return uint(keccak256(abi.encodePacked(block.prevrandao, block.timestamp, players.length)));
     }
+
+    function pickWinner() public{
+        // valida a quantidade de players
+        // e se o manager quem executa a funcao
+        require(msg.sender == manager, "Only the manager can pick a lottery winner.");
+        require(players.length >= 3, "Is necessary at least three players.");
+
+        // calcula o indice do
+        // player vencedor
+        uint r = random();
+        address payable winner;
+        uint index = r % players.length;
+        winner = players[index];
+
+        // envia o saldo do contrato
+        // para o vencedor
+        winner.transfer(getBalance());
+
+    }
+
 }

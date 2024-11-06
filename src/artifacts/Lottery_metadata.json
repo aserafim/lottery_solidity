@@ -37,6 +37,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "pickWinner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -101,11 +108,11 @@
 	},
 	"sources": {
 		"src/lottery.sol": {
-			"keccak256": "0x6a9dbdc211e347faaceb2f6a007156b7547eed6e7a40afe6f65a9cb376828c1e",
+			"keccak256": "0x75531cec520a837b53ed364e6cddcedc029166d825ef2142adf95278977b1408",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://78284df017d0b12c9282709a85f60c21233cfe730874281b36b12da511ef12ef",
-				"dweb:/ipfs/QmVSkD2kQsShqxBgTYagWQgGra3ER9xfUuSxWsTKQHtJbm"
+				"bzz-raw://4c5176fcedfa016f92cebb0d7922180c2204abffea94074771221f3a3327a93e",
+				"dweb:/ipfs/QmZbQqW6mFPoe3abqVvEQfdJ1SNNzHRGBudNbBsgdtf2uG"
 			]
 		}
 	},

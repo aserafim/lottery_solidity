@@ -17,4 +17,31 @@ contract Lottery{
     constructor(){
         manager = msg.sender;
     }
+
+    // funcao que possibilita contas/
+    // contratos externos enviem eth
+    // para o contrato
+    receive() external payable { 
+        // o valor para as apostas deve
+        // ser 0.1 eth
+        require(msg.value == 0.1 ether);
+
+        // convertido para payable
+        // para ser compativel com
+        // o tipo do array de payable
+        // players
+        players.push(payable(msg.sender));
+    }
+
+    // define a funcao para verificar o 
+    // saldo do contrato. isso so pode
+    // ser feito pelo manager
+    function getBalance() public view returns(uint){
+        require(msg.sender == manager);
+        return address(this).balance;
+    }
+
+    function random() public view returns(uint){
+        return uint(keccak256(abi.encodePacked(block.prevrandao, block.timestamp, players.length)));
+    }
 }

@@ -12,6 +12,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "manager",
 				"outputs": [
 					{
@@ -41,6 +54,23 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "random",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -71,11 +101,11 @@
 	},
 	"sources": {
 		"src/lottery.sol": {
-			"keccak256": "0x75c88436773b26c4419c4b1ae1d3eb27b9ebeb688069c72393774271c5af9c8f",
+			"keccak256": "0x6a9dbdc211e347faaceb2f6a007156b7547eed6e7a40afe6f65a9cb376828c1e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a3539d8a0cd26dee7c3b4d7b8739fbf91f0c0a9a72a94ad3ca39fb6a72a91568",
-				"dweb:/ipfs/QmbpVBBjK893yq2S1EAvJE9xbuGZTYLuE5H41AHzpeLnP7"
+				"bzz-raw://78284df017d0b12c9282709a85f60c21233cfe730874281b36b12da511ef12ef",
+				"dweb:/ipfs/QmVSkD2kQsShqxBgTYagWQgGra3ER9xfUuSxWsTKQHtJbm"
 			]
 		}
 	},
